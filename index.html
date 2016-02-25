@@ -1,12 +1,265 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 	<title>The Gym - Personal Training</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="blueberry.css"/>
 <style type="text/css">
-	
+.{
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+}
+body{
+background: #f0f0f0;
+font: 14px/20px Arial,San-Serif;
+margin: 0;
+color:#555;
+}
+
+h1{
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5% 0;
+}
+
+h2{
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+}
+h3{
+	line-height: 40%;
+	padding: 5% 0;
+
+}
+
+p{
+	padding: 1%;
+}
+img{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width:auto;
+}
+
+a{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}
+
+header{
+	background: #405580;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100%;
+	opacity: 0.90;
+}
+#logo{
+	margin: 20px;
+	float: left;
+	width: 68px;
+	height: 45px;
+	background:url('image10.jpg');
+}
+nav{
+	float: right;
+	padding: 35px 20px 20px 0;
+}
+
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: background:url('image11.png') center;
+}
+
+a:hover#menu-icon{
+	border-radius: 4px 4px 0 0;
+
+}
+ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	float: left;
+	padding: 10px ;
+}
+
+.current{
+	color: #FFF;
+	text-decoration: underline;
+
+}
+
+#doc{
+	margin: 40px 0;
+}
+
+#content{
+	margin: 0 auto;
+	max-width: 1140px;
+	margin-top: 110px;
+
+}
+
+.blueberry{
+	max-width: 960px;
+	margin-top: 110px;
+}
+
+section{
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+article{
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}
+aside{
+	float: right;
+	margin: 0 auto;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+	text-align: center;
+
+}
+
+ul.gym li{
+	padding-left: 3%;
+
+}
+footer{
+	background: #333333;
+	width: 100%
+	overflow: hidden;
+	opacity: 0.60px;
+
+}
+
+footer p,footer h3{
+	color: #FFF;
+
+}
+
+footer p{
+	color: #FFF;
+	text-decoration: none;
+	padding: 2% 2% 2% 5%;
+
+}
+
+ul.social li{
+	display: inline;
+}
+ul.social li img{
+	height: 50px;
+}
+footer.second{
+	border-top: 1px solid #4D4E50;
+	background-color: #333333;
+	max-height: 50px;
+	text-align: center;
+	opacity: 0.95;
+}
+/*.............................Media........................................................*/
+
+@media screen and (max-width: 478px){
+	body{
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 740px){
+	header{
+		position: absolute;
+	}
+	#menu-icon{
+		display: inline-block;
+	}
+
+	nav ul,nav:active ul{
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #405580;
+		border: 1px solid #FFF;
+		right: 20px;
+		top: 60px;
+		width: 50px;
+		border-radius: 2px 0 2px 2px;
+	}
+
+	nav li{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+nav:hover ul{
+	display: block;
+}
+
+section{
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+article{
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+aside{
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+}
+
+
+
+
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+<script>
+	$(window).load(function () {
+		// body...
+		$('.blueberry').blueberry();
+	});
+</script>
 </head>
 <body>
 <header>
@@ -28,28 +281,87 @@
 <ul class="slides">
 <li><img src="images.jpg"/></li>
 <li><img src="download.jpg"/></li>
-<li><img src="image1.jpg"/></li>
-<li><img src="download1.jpg"/></li>
+<li><img src="image1.JPG"/></li>
+<li><img src="download1.JPG"/></li>
 </ul>
 </div>
 </div>
 </div>
 <section>
-<img src="download1.jpg"/>
+<img src="image2.png"/>
 <h1>Best Trainers Around</h1>
-<p></p>	
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conductive to health.[2] Gyms were popular in ancient Greece. </p>	
 </section>
 
 <section>
-<img src="download1.jpg"/>
-<h1>Best Trainers Around</h1>
-<p></p>	
+<img src="image3.png"/>
+<h1>Local and Convenient</h1>
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conductive to health.Gyms were popular in ancient Greece.</p>	
 </section>
 
 <section>
-<img src="download1.jpg"/>
-<h1>Best Trainers Around</h1>
-<p></p>	
+<img src="image4.png"/>
+<h1>Check out for Free!</h1>
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conductive to health.Gyms were popular in ancient Greece.</p>	
 </section>
+<div class="clear"></div>
+<article>
+<img src="image1.jpg">	
+</article>
+
+<aside>
+<h2>Our group class schedule</h2>
+<ul class="gym">
+<li><h3>Studio cycling at 8.am for 20 min for morning </h3></li>	
+<li><h3>Studio cycling at 8.am for 20 min for evening </h3></li>
+<li><h3>Studio cycling at 8.am for 20 min for morning</h3></li>
+<li><h3>Studio cycling at 8.am for 20 min for evening</h3></li>
+<li><h3>Studio cycling at 8.am for 20 min for morning</h3></li>
+</aside>
+<div class="clear"></div>
+
+
+<section>
+<img src="image13.jpg"/>
+<h1>Ladies Section</h1>
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises.</p>	
+</section>
+
+<section>
+<img src="image14.png"/>
+<h1>The Gym Floor</h1>
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises.</p>	
+</section>
+
+<section>
+<img src="image15.png"/>
+<h1>Free Weight</h1>
+<p>Gymnasia apparatus such as bar-bells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises.</p>	
+</section>
+
+<footer>
+<section>
+	<h3><b>The Gym</b></h3>
+	<p><b>215-555-5555</b><br><br>
+	2334,Green Evenue, Plaza<br>
+	Banglore , India</p>
+
+</section>
+<section>
+	<h3>Connect With Us</h3>
+	<ul class="social">
+	<li><a href="#"><img src="image5.png"></a></li>
+	<li><a href="#"><img src="image6.png"></a></li>
+	<li><a href="#"><img src="image7.gif"></a></li>
+	<li><a href="#"><img src="image8.gif"></a></li>
+	</ul>
+</section>
+<section>
+	<img src="image12.png"/>
+</section>
+</footer>
+<footer>
+	<p>@Copyright - The Gym , 2016</p>
+</footer>
 </body>
 </html>
